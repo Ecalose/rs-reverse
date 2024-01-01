@@ -1,17 +1,34 @@
 {
   "name": "rs-reverse",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "瑞数算法逆向,website reverse engineering",
   "main": "main.js",
   "directories": {
     "test": "test"
   },
+  "bin": {
+    "rs-reverse": "./main.js",
+    "rs-runcode": "./script/runcode.js"
+  },
   "scripts": {
     "test": "jest ./test/",
     "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand ./test/"
   },
-  "logLevel": "warn",
-  "author": "rnet",
+  "logLevel": "info",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pysunday/rs-reverse"
+  },
+  "keywords": [
+    "rs",
+    "瑞数",
+    "瑞数算法逆向"
+  ],
+  "files": ["package.json", "README.md", "utils", "main.js", "test", "src", "script", "example"],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "author": "pysunday",
   "license": "ISC",
   "tsfile": "1-$_ts-full.json",
   "dependencies": {
